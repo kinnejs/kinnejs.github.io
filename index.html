@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Kinne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Portfolio</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Jonathan Kinne</h1>
+        <h2>Software Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.linkedin.com/in/jonathan-kinne-a6458a14/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://www.facebook.com/jon.stuart.96592" target="_blank" class="social"><i class="fab fa-facebook"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://github.com/kinnejs" target="_blank" class="social"><i class="fab fa-github"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container-portfolio" style="font-size">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1 style="text-decoration: underline; font-size: 75px"><center>Portfolio</center></h1>
+        <div class="TakeAction">
+            <div class="row">
+
+                <h2 style="font-size: 25px">Take Action!!!</h2>
+                <div class="takeaction-column">
+                    <a href="https://takeactionwebmvc.azurewebsites.net/" target="_blank">
+                        <img src="TakeAction.jpg" alt="Take Action">
+                    </a>
+                    <p class="portfolio-description" style="height: 100px; line-height: 100px; text-align:center">
+                        <div class="desc">
+                            Take Action!!! is an ASP.NET Web MVC Application that is used to keep track of Assignments for all of your Business Needs. This website was built with the help of Bootstrap and was created as a project for Eleven Fifty Academy.
+                        </div>
+                    </p>
+                </div>
+                <h2 style="font-size: 25px">Boats-4-U</h2>
+                <div class="takeaction-column">
+                    <a href="https://github.com/adamkr13/Boats-4-U" target="_blank">
+                        <img src="Boat.jpg" alt="Take Action">
+                    </a>
+                    <p class="portfolio-description" style="height: 100px; line-height: 100px; text-align:center">
+                        <div class="desc">
+                            Boats-4-U is an ASP.NET Web Application (.NET Framework) in the C# programming language. The purpose of this application is to create a platform in which would-be boat enthusiasts can safely connect with boat owners/operators for the purpose of water recreation.
+                        </div>
+                    </p>
+                </div>
+                <h2 style="font-size: 25px">Eleven Note MVC</h2>
+                <div class="takeaction-column">
+                    <a href="https://github.com/kinnejs/ElevenNoteMVC" target="_blank">
+                        <img src="ElevenNote.jpg" alt="Eleven Note">
+                    </a>
+                    <p class="portfolio-description" style="height: 100px; line-height: 100px; text-align:center">
+                        <div class="desc">
+                            Eleven Note is an ASP.NET Web Application (.NET Framework) in the C# programming language. The purpose of this application is to allow users to create Notes online.  Other users can then add comments to the individual notes.
+                        </div>
+                    </p>
+                </div>
+                <h2 style="font-size: 25px">Gold Challenges</h2>
+                <div class="takeaction-column">
+                    <a href="https://github.com/kinnejs/Gold_Challenges" target="_blank">
+                        <img src="GoldChallenges.jpg" alt="">
+                    </a>
+                    <p class="portfolio-description" style="height: 100px; line-height: 100px; text-align:center">
+                        <div class="desc">
+                            The Gold Challenges are a series of four Console Applications written in C#.  The first application allows a manager at the Komodo Cafe to create, read update and delete items on the Cafe's menu.  The second application allows a claims agent at Komodo Insurance to see all of the claims, work on the next item in the claim, and enter a new claim.  The third application allows a security officer to assign badges access to certain doors.  The final application allows a company to track outings as well as calculate the costs for the various outings.
+                        </div>
+                    </p>
+                </div>
+                <h2 style="font-size: 25px">Character</h2>
+                <div class="takeaction-column">
+                    <a href="https://github.com/kinnejs/Character" target="_blank">
+                        <img src="Character.jpg" alt="">
+                    </a>
+                    <p class="portfolio-description" style="height: 100px; line-height: 100px; text-align:center">
+                        <div class="desc">
+                            The Character is a project that was created with the sole use of HTML and CSS.
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
+    <div id="about_container" class="container-about">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1 style="text-decoration: underline; font-size: 75px"><center>About Me</center></h1>
+        <section>
+            <div class="takeaction-column" style="text-align: center">
+                <img src="Jonny.jpg" class="profile-pic" alt="Jonathan Kinne">
+
+                <p style="font-size: 25px; height: 700px; align-items: center; text-align: center">
+                    My Name is Jonathan Kinne.  In 2009, I graduated from Vanderbilt University with a BA in Chemistry and Finance.  After working two years as a Clinical Pharmacologist at Vanderbilt Medical Center I went back to school and earned an MBA from Belmont University with a concentration in Healthcare and Finance.  After graduation I had held positions as a Financial and Business Analyst in Nashville, TN; Dallas, TX and Indianapolis, IN.  While I have thoroughly enjoyed my time working as an analyst, I decided that it was time to make a change.
+                    <br />On May 13th 2021, I will graduate from ElevenFifty academy where I have been honing my skills as a Software Developer.  In my time with ElevenFifty, my view of the software industry has definitely expanded.  The enjoyment that I get from challenging myself along with being able to create projects from scratch have allowed me to understand that this is definitely the career path that I was meant to pursue.
+                </p>
+            </div>
+
+        </section>
+        <section>
+            <h2 style="text-decoration: underline; font-size: 75px"><center>Expertise</center></h2>
+            <p>
+                <div id="used" style="text-align: center">
+                    <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;ASP.NET</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MVC</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;BootStrap</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Agile</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Git</div>
+
+                </div>
+            </p>
+        </section>
+    </div>
+    <div id="contact_container" class="container-contact">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1 style="text-decoration: underline; font-size: 75px"><center>Get in Touch</center></h1>
+        <section style="text-align: center">
+            <h2><center>Ph: (260) 615-6296<br /><br /> Email: kinnejs@gmail.com</center></h2>
+            <br/>
+            <br/>
+            <p>
+                <form>
+                    <h3>Name</h3>
+                    <input type="text" size="30" />
+                    <h3>Email Address</h3>
+                    <input type="text" size="30"/>
+                    <h3>Brief Note</h3>
+                    <input type="text" size="40" maxlength="500" style="height: 100px; text-align: left; vertical-align: top"/>
+                    <br />
+                    <br/>
+                    <input type="submit" value="Submit" />
+                </form>
+            </p>
+        </section>
+    </div>
+    <div id="footer">
+
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
